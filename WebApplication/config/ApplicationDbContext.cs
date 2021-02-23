@@ -12,6 +12,13 @@ namespace WebApplication.config
                 Database.EnsureCreated();
             }
 
+            public DbSet<Provider> Providers { get; set; }
             public DbSet<Product> Products { get; set; }
+           /* protected override void OnModelCreating(ModelBuilder modelBuilder)
+            {
+                modelBuilder.Entity<Provider>()
+                    .HasMany(b => b.products)
+                    .WithOne();
+            }*/
         }
     }

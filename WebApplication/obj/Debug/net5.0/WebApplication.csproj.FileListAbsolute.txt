@@ -86,3 +86,5 @@
 /home/g14wx/RiderProjects/WebApplication/WebApplication/obj/Debug/net5.0/ref/WebApplication.dll
 /home/g14wx/RiderProjects/WebApplication/WebApplication/obj/Debug/net5.0/WebApplication.pdb
 /home/g14wx/RiderProjects/WebApplication/WebApplication/obj/Debug/net5.0/WebApplication.genruntimeconfig.cache
+/home/g14wx/RiderProjects/WebApplication/WebApplication/obj/Debug/net5.0/Razor/Views/Market/ProductForm.cshtml.g.cs
+/home/g14wx/RiderProjects/WebApplication/WebApplication/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs

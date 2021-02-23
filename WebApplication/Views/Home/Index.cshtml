@@ -1,8 +1,4 @@
-@using WebApplication.Models
-@{
-    Layout = null;
-}
-
+@model List<Product>
 <!DOCTYPE html>
 
 <html>
@@ -15,14 +11,17 @@
         <th>Id</th>
         <th>Title</th>
         <th>Price</th>
+        <th>Provider</th>
+        <th>Action</th>
     </tr>
-    @foreach (Product producto in ViewBag.products as List<Product>)
+    @foreach (Product producto in @Model)
     {
      <tr>
-             <th>@producto.id</th>
-             <th>@producto.title</th>
-             <th>@String.Format("{0:0.00}",producto.price)</th>
-         </tr>   
+             <td>@producto.id</td>
+             <td>@producto.title</td>
+         <td>@String.Format("{0:0.00}",producto.price)</td>
+         <td><a asp-controller="market" asp-action="ProductForm" asp-route-id="@producto.id"> See product</a></td>
+     </tr>   
     }
 </table>
 </body>

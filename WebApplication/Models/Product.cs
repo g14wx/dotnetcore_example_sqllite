@@ -11,5 +11,7 @@ namespace WebApplication.Models
         public int id { get; set; }
         public String title { get; set; }
         public double price { get; set; }
+        
+        public Provider provider { get; set; }
     }
 }
