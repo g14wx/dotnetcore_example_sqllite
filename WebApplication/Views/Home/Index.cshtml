@@ -1,0 +1,29 @@
+@using WebApplication.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Price</th>
+    </tr>
+    @foreach (Product producto in ViewBag.products as List<Product>)
+    {
+     <tr>
+             <th>@producto.id</th>
+             <th>@producto.title</th>
+             <th>@String.Format("{0:0.00}",producto.price)</th>
+         </tr>   
+    }
+</table>
+</body>
+</html>
