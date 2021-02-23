@@ -25,7 +25,6 @@ namespace WebApplication.Controllers
         [Route("/product")]
         public RedirectResult EditProductForm(Product product)
         {
-            Console.WriteLine(product.provider);
             if (product.id > 0)
             {
                 //EDIT

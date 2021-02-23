@@ -18,6 +18,7 @@ namespace WebApplication.Controllers
         [Route("/")]
         public ViewResult Index()
         {
+            ViewBag.titulo = "Simple CRUD app with sqlite";
             List<Product> products = _dbContext.Products.ToList();
             return View(products);
         }

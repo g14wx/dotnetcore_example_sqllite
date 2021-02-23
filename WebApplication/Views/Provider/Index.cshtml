@@ -1,0 +1,26 @@
+@model List<Provider>
+<table class="table table-dark">
+    <thead>
+    <th colspan="2"></th>
+    <th class="d-flex flex-row justify-content-center">
+        <button type="button" class="btn btn-success">
+            <a href="/provider" style="text-decoration: none;color: white">Add new Provider</a>
+        </button>
+    </th>
+    </thead>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    @foreach (Provider provider in @Model)
+    {
+        <tr>
+            <td>@provider.Id</td>
+            <td>@provider.provider</td>
+            <td><a asp-controller="Provider" asp-action="ProviderForm" asp-route-id="@provider.Id">View/Edit Provider</a></td>
+        </tr>
+    }
+</table>

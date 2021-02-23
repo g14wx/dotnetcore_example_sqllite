@@ -12,8 +12,8 @@ namespace WebApplication.config
                 Database.EnsureCreated();
             }
 
-            public DbSet<Provider> Providers { get; set; }
-            public DbSet<Product> Products { get; set; }
+            public virtual DbSet<Provider> Providers { get; set; }
+            public virtual DbSet<Product> Products { get; set; }
            /* protected override void OnModelCreating(ModelBuilder modelBuilder)
             {
                 modelBuilder.Entity<Provider>()

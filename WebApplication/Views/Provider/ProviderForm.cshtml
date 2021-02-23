@@ -1,0 +1,10 @@
+@model Provider
+<form asp-controller="Provider" asp-action="EditProvider" method="post">
+  <input type="hidden" asp-for="Id" >
+  <div class="form-group">
+    <label for="providerTitle">Title Provider</label>
+    <input type="text" asp-for="provider" class="form-control" aria-describedby="title" placeholder="Set title provider">
+    <small class="form-text text-muted">Provider title</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Save Product</button>
+</form>
